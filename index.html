@@ -1,61 +1,86 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">  <title>JL Player - Best Video Player for Android</title>
-  <meta name="description" content="JL Player is a powerful Android video player with private folder, casting, and all format support.">  <!-- Open Graph -->  <meta property="og:title" content="JL Player">
-  <meta property="og:description" content="Play all formats. Lock your private videos.">
-  <meta property="og:image" content="https://via.placeholder.com/600x300">  <!-- FAQ Schema -->  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is JL Player?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JL Player is a powerful Android video player with private folder, casting, and all format support."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does it support all formats?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, it supports MP4, MKV, AVI, FLV, MOV and more."
-        }
-      }
-    ]
-  }
-  </script>  <!-- Bootstrap -->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">  <style>
-    body { background:#0f172a; color:white; font-family:Arial; }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    .navbar { background:#020617; }
+  <title>JL Player - Free Video Player for Android | Private Folder & All Formats</title>
+  <meta name="description" content="JL Player is a powerful Android video player with private folder, casting, MediaInfo support and all format playback.">
 
-    .hero { padding:100px 0; text-align:center; }
+  <!-- Bootstrap -->
 
-    .section { padding:70px 0; }
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    .footer { background:#020617; padding:20px; text-align:center; }
+  <!-- Icons -->
 
-    .feature-card {
-      background:#1e293b;
-      border-radius:12px;
-      padding:20px;
-      transition:0.3s;
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body { background:#020617; color:white; font-family:Arial; }
+
+    /* HERO */
+    .hero-premium {
+      padding:120px 20px;
+      text-align:center;
+      background: radial-gradient(circle at top, #1e293b, #020617);
+      position:relative;
     }
 
-    .feature-card:hover {
-      transform:translateY(-8px) scale(1.02);
-      box-shadow:0 10px 30px rgba(37,99,235,0.3);
+    .hero-premium::before {
+      content:"";
+      position:absolute;
+      width:500px;
+      height:500px;
+      background: radial-gradient(circle, rgba(56,189,248,0.25), transparent);
+      top:-100px;
+      left:50%;
+      transform:translateX(-50%);
+      filter:blur(80px);
     }
 
-    .screenshot-img {
-      width:100%;
-      border-radius:10px;
+    .hero-title { font-size:3rem; font-weight:800; }
+
+    .gradient-text {
+      background: linear-gradient(90deg,#38bdf8,#22c55e);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
     }
 
-    /* Fade animation */
+    .hero-sub { color:#cbd5e1; }
+
+    .badge-top {
+      background: rgba(56,189,248,0.1);
+      color:#38bdf8;
+      padding:6px 14px;
+      border-radius:999px;
+      display:inline-block;
+      font-size:14px;
+    }
+
+    /* FEATURES */
+    .premium-card {
+      background: linear-gradient(145deg,#1e293b,#0f172a);
+      border-radius:16px;
+      padding:25px;
+      transition:0.4s;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .premium-card:hover {
+      transform:translateY(-8px);
+      box-shadow:0 20px 40px rgba(56,189,248,0.2);
+    }
+
+    .icon {
+      width:32px;
+      height:32px;
+      color:#38bdf8;
+      margin-bottom:12px;
+    }
+
+    .section { padding:80px 0; }
+
     .fade-in {
       opacity:0;
       transform:translateY(30px);
@@ -67,71 +92,127 @@
       transform:translateY(0);
     }
 
-    /* Typing cursor */
-    #typing-text::after {
-      content:"|";
-      animation:blink 1s infinite;
-      margin-left:5px;
-    }
+    .footer { text-align:center; padding:30px; color:#94a3b8; }
+  </style>
 
-    @keyframes blink {
-      0%,50%,100% { opacity:1; }
-      25%,75% { opacity:0; }
-    }
-  </style></head><body><!-- NAVBAR --><nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero-premium fade-in">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">JL Player</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-  <span class="navbar-toggler-icon"></span>
-</button>
 
-<div id="navMenu" class="collapse navbar-collapse">
-  <ul class="navbar-nav ms-auto">
-    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-    <li class="nav-item"><a class="nav-link" href="#compare">Compare</a></li>
-    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-  </ul>
-</div>
+```
+<div class="badge-top mb-3">🚀 Trusted by 100K+ users</div>
 
-  </div>
-</nav><!-- HERO --><section class="hero fade-in">
-  <div class="container">
-    <h1 class="display-4 fw-bold">
-      <span id="typing-text"></span>
-    </h1><p class="lead mt-3">Powerful Android video player with advanced features.</p>
+<h1 class="hero-title">
+  The Next-Gen <span class="gradient-text">Video Player</span>
+</h1>
+
+<p class="hero-sub mt-3">
+  Play everything. Secure your videos. Experience smooth, ad-light playback.
+</p>
 
 <a href="https://play.google.com/store/apps/details?id=com.jldevelopers.jlplayer" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height:70px;">
 </a>
 
+<p class="mt-3 text-secondary">
+  ⭐ 4.5 Rating • 📥 100K+ Downloads • ⚡ Fast & Lightweight
+</p>
+```
+
   </div>
-</section><!-- FEATURES --><section id="features" class="section fade-in">
+</section>
+
+<!-- FEATURES -->
+
+<section id="features" class="section fade-in">
   <div class="container text-center">
-    <h2 class="mb-5">Powerful Features</h2><div class="row g-4">
+    <h2 class="mb-5">Powerful Features</h2>
 
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>🎥 All Formats</h4><p>MP4, MKV, AVI, FLV and more.</p></div></div>
+```
+<div class="row g-4">
 
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>🔐 Private Folder</h4><p>Secure hidden videos.</p></div></div>
+  <div class="col-md-4">
+    <div class="premium-card">
+      <i data-lucide="video" class="icon"></i>
+      <h5>All Formats</h5>
+      <p>Supports MP4, MKV, AVI and more.</p>
+    </div>
+  </div>
 
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>🤲 Gestures</h4><p>Easy playback control.</p></div></div>
+  <div class="col-md-4">
+    <div class="premium-card">
+      <i data-lucide="lock" class="icon"></i>
+      <h5>Private Folder</h5>
+      <p>Secure hidden videos.</p>
+    </div>
+  </div>
 
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>📂 Smart Folders</h4><p>Auto organize videos.</p></div></div>
+  <div class="col-md-4">
+    <div class="premium-card">
+      <i data-lucide="zap" class="icon"></i>
+      <h5>Fast Playback</h5>
+      <p>Lag-free HD & 4K performance.</p>
+    </div>
+  </div>
 
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>📺 Cast</h4><p>Watch on TV.</p></div></div>
+  <div class="col-md-4">
+    <div class="premium-card">
+      <i data-lucide="bar-chart-3" class="icon"></i>
+      <h5>MediaInfo</h5>
+      <p>Detailed codec & bitrate info.</p>
+    </div>
+  </div>
 
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>⚡ Fast Playback</h4><p>Lag-free HD & 4K.</p></div></div>
+  <div class="col-md-4">
+    <div class="premium-card">
+      <i data-lucide="tv" class="icon"></i>
+      <h5>Cast to TV</h5>
+      <p>Stream to Smart TVs.</p>
+    </div>
+  </div>
 
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>🎧 Background</h4><p>Play in background.</p></div></div>
-
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>💬 Subtitles</h4><p>Subtitle support.</p></div></div>
-
-  <div class="col-md-4"><div class="feature-card fade-in"><h4>📊 MediaInfo</h4><p>Detailed codec & bitrate info.</p></div></div>
+  <div class="col-md-4">
+    <div class="premium-card">
+      <i data-lucide="headphones" class="icon"></i>
+      <h5>Background Play</h5>
+      <p>Play videos in background.</p>
+    </div>
+  </div>
 
 </div>
+```
 
   </div>
-</section><!-- COMPARISON --><section id="compare" class="section fade-in">
+</section>
+
+<!-- IMAGE COMPARISON -->
+
+<section class="section text-center fade-in">
+  <div class="container">
+    <h2 class="mb-4">Why JL Player Stands Out</h2>
+
+```
+<img src="assets/jl-player-vs-mx-player-vs-vlc.png"
+     class="img-fluid rounded shadow"
+     alt="JL Player vs MX Player vs VLC comparison best video player android">
+```
+
+  </div>
+</section>
+
+<!-- COMPARISON -->
+
+<section id="compare" class="section fade-in">
   <div class="container text-center">
-    <h2 class="mb-5">Why Choose JL Player?</h2><div class="table-responsive">
+    <h2 class="mb-5">Comparison</h2>
+
+```
+<div class="table-responsive">
   <table class="table table-dark table-bordered">
     <tr><th>Feature</th><th>Others</th><th>JL Player</th></tr>
     <tr><td>Formats</td><td>Limited</td><td>All</td></tr>
@@ -139,48 +220,47 @@
     <tr><td>Ads</td><td>Heavy</td><td>Minimal</td></tr>
   </table>
 </div>
+```
 
   </div>
-</section><!-- FAQ --><section id="faq" class="section bg-dark fade-in">
-  <div class="container">
-    <h2 class="text-center mb-5">FAQ</h2><div class="accordion" id="faqAccordion">
-<a href="/mx-player-alternative.html">MX Player Alternative</a>
-  <div class="accordion-item bg-dark text-white">
-    <button class="accordion-button bg-dark text-white" data-bs-toggle="collapse" data-bs-target="#f1">
-      What is JL Player?
-    </button>
-    <div id="f1" class="collapse show">
-      <div class="accordion-body">A powerful video player app.</div>
-    </div>
-  </div>
+</section>
 
-</div>
+<!-- FAQ -->
+
+<section id="faq" class="section fade-in">
+  <div class="container text-center">
+    <h2 class="mb-4">FAQ</h2>
+
+```
+<p>
+  Learn more about JL Player or check our 
+  <a href="/mx-player-alternative.html" style="color:#38bdf8;">MX Player Alternative Guide</a>
+</p>
+```
 
   </div>
-</section><!-- FOOTER --><footer class="footer">
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
   <p>© 2026 JL Developers</p>
-</footer><!-- Bootstrap --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script><!-- Scroll Animation --><script>
-  const observer = new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-    });
-  });
+</footer>
 
-  document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-</script><!-- Typing Animation --><script>
-  const text = "Play Everything. Lock Anything.";
-  let i = 0;
+<!-- JS -->
 
-  function typing(){
-    if(i < text.length){
-      document.getElementById("typing-text").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typing, 50);
-    }
-  }
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  window.onload = typing;
-</script></body>
+<script>
+lucide.createIcons();
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{
+if(e.isIntersecting){e.target.classList.add('show')}
+})
+});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+</script>
+
+</body>
 </html>
