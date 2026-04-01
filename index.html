@@ -1,266 +1,98 @@
-<!DOCTYPE html>
+<!-- ADD THIS INSIDE <head> -->
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://jl-player.github.io/" />
 
-  <title>JL Player - Free Video Player for Android | Private Folder & All Formats</title>
-  <meta name="description" content="JL Player is a powerful Android video player with private folder, casting, MediaInfo support and all format playback.">
+<!-- ADD BELOW FEATURES SECTION -->
 
-  <!-- Bootstrap -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Icons -->
-
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <style>
-    body { background:#020617; color:white; font-family:Arial; }
-
-    /* HERO */
-    .hero-premium {
-      padding:120px 20px;
-      text-align:center;
-      background: radial-gradient(circle at top, #1e293b, #020617);
-      position:relative;
-    }
-
-    .hero-premium::before {
-      content:"";
-      position:absolute;
-      width:500px;
-      height:500px;
-      background: radial-gradient(circle, rgba(56,189,248,0.25), transparent);
-      top:-100px;
-      left:50%;
-      transform:translateX(-50%);
-      filter:blur(80px);
-    }
-
-    .hero-title { font-size:3rem; font-weight:800; }
-
-    .gradient-text {
-      background: linear-gradient(90deg,#38bdf8,#22c55e);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
-
-    .hero-sub { color:#cbd5e1; }
-
-    .badge-top {
-      background: rgba(56,189,248,0.1);
-      color:#38bdf8;
-      padding:6px 14px;
-      border-radius:999px;
-      display:inline-block;
-      font-size:14px;
-    }
-
-    /* FEATURES */
-    .premium-card {
-      background: linear-gradient(145deg,#1e293b,#0f172a);
-      border-radius:16px;
-      padding:25px;
-      transition:0.4s;
-      border:1px solid rgba(255,255,255,0.05);
-    }
-
-    .premium-card:hover {
-      transform:translateY(-8px);
-      box-shadow:0 20px 40px rgba(56,189,248,0.2);
-    }
-
-    .icon {
-      width:32px;
-      height:32px;
-      color:#38bdf8;
-      margin-bottom:12px;
-    }
-
-    .section { padding:80px 0; }
-
-    .fade-in {
-      opacity:0;
-      transform:translateY(30px);
-      transition:all 0.8s ease;
-    }
-
-    .fade-in.show {
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    .footer { text-align:center; padding:30px; color:#94a3b8; }
-  </style>
-
-</head>
-
-<body>
-
-<!-- HERO -->
-
-<section class="hero-premium fade-in">
+<section class="section fade-in">
   <div class="container">
 
 ```
-<div class="badge-top mb-3">🚀 Trusted by 100K+ users</div>
+<h2 class="text-center mb-4">Best Video Player for Android</h2>
 
-<h1 class="hero-title">
-  The Next-Gen <span class="gradient-text">Video Player</span>
-</h1>
-
-<p class="hero-sub mt-3">
-  Play everything. Secure your videos. Experience smooth, ad-light playback.
-</p>
-
-<a href="https://play.google.com/store/apps/details?id=com.jldevelopers.jlplayer" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height:70px;">
-</a>
-
-<p class="mt-3 text-secondary">
-  ⭐ 4.5 Rating • 📥 100K+ Downloads • ⚡ Fast & Lightweight
+<p class="text-center text-secondary">
+  JL Player is one of the best video player apps for Android, designed to support all formats,
+  provide a secure private folder, and deliver smooth playback performance. Whether you are watching
+  movies, personal videos, or high-resolution content, JL Player ensures a fast and seamless experience.
 </p>
 ```
 
   </div>
 </section>
 
-<!-- FEATURES -->
+<!-- ADD DETAILED CONTENT -->
 
-<section id="features" class="section fade-in">
-  <div class="container text-center">
-    <h2 class="mb-5">Powerful Features</h2>
+<section class="section fade-in">
+  <div class="container">
 
 ```
-<div class="row g-4">
+<h2>Why Choose JL Player Over Other Video Players?</h2>
 
-  <div class="col-md-4">
-    <div class="premium-card">
-      <i data-lucide="video" class="icon"></i>
-      <h5>All Formats</h5>
-      <p>Supports MP4, MKV, AVI and more.</p>
-    </div>
-  </div>
+<p>
+  Many Android users struggle with video players that are filled with ads, slow performance,
+  and lack essential features like privacy protection. JL Player solves these problems by offering
+  a lightweight, fast, and feature-rich experience.
+</p>
 
-  <div class="col-md-4">
-    <div class="premium-card">
-      <i data-lucide="lock" class="icon"></i>
-      <h5>Private Folder</h5>
-      <p>Secure hidden videos.</p>
-    </div>
-  </div>
+<p>
+  Unlike many traditional video players, JL Player focuses on performance and user privacy.
+  It includes a secure private folder, advanced playback controls, and detailed media information
+  powered by MediaInfo technology.
+</p>
 
-  <div class="col-md-4">
-    <div class="premium-card">
-      <i data-lucide="zap" class="icon"></i>
-      <h5>Fast Playback</h5>
-      <p>Lag-free HD & 4K performance.</p>
-    </div>
-  </div>
+<h3 class="mt-4">Key Advantages</h3>
 
-  <div class="col-md-4">
-    <div class="premium-card">
-      <i data-lucide="bar-chart-3" class="icon"></i>
-      <h5>MediaInfo</h5>
-      <p>Detailed codec & bitrate info.</p>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="premium-card">
-      <i data-lucide="tv" class="icon"></i>
-      <h5>Cast to TV</h5>
-      <p>Stream to Smart TVs.</p>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="premium-card">
-      <i data-lucide="headphones" class="icon"></i>
-      <h5>Background Play</h5>
-      <p>Play videos in background.</p>
-    </div>
-  </div>
-
-</div>
+<ul>
+  <li>Supports all video formats including MP4, MKV, AVI, and FLV</li>
+  <li>Private folder to hide and secure personal videos</li>
+  <li>Minimal ads for a clean viewing experience</li>
+  <li>Fast playback with hardware acceleration</li>
+  <li>Detailed video metadata including codec, bitrate, and resolution</li>
+</ul>
 ```
 
   </div>
 </section>
 
-<!-- IMAGE COMPARISON -->
+<!-- ADD USE CASE SECTION -->
+
+<section class="section fade-in">
+  <div class="container">
+
+```
+<h2>Use JL Player for Every Video Need</h2>
+
+<p>
+  JL Player is designed for all types of users. Whether you want to watch movies,
+  listen to music videos in the background, or securely store personal content,
+  JL Player adapts to your needs.
+</p>
+
+<p>
+  With support for casting, subtitle customization, and gesture controls,
+  it provides a complete media experience on Android devices.
+</p>
+```
+
+  </div>
+</section>
+
+<!-- ADD INTERNAL SEO LINK SECTION -->
 
 <section class="section text-center fade-in">
   <div class="container">
-    <h2 class="mb-4">Why JL Player Stands Out</h2>
 
 ```
-<img src="assets/jl-player-vs-mx-player-vs-vlc.png"
-     class="img-fluid rounded shadow"
-     alt="JL Player vs MX Player vs VLC comparison best video player android">
-```
+<h2>Explore More</h2>
 
-  </div>
-</section>
-
-<!-- COMPARISON -->
-
-<section id="compare" class="section fade-in">
-  <div class="container text-center">
-    <h2 class="mb-5">Comparison</h2>
-
-```
-<div class="table-responsive">
-  <table class="table table-dark table-bordered">
-    <tr><th>Feature</th><th>Others</th><th>JL Player</th></tr>
-    <tr><td>Formats</td><td>Limited</td><td>All</td></tr>
-    <tr><td>Privacy</td><td>No</td><td>Yes</td></tr>
-    <tr><td>Ads</td><td>Heavy</td><td>Minimal</td></tr>
-  </table>
-</div>
-```
-
-  </div>
-</section>
-
-<!-- FAQ -->
-
-<section id="faq" class="section fade-in">
-  <div class="container text-center">
-    <h2 class="mb-4">FAQ</h2>
-
-```
-<p>
-  Learn more about JL Player or check our 
-  <a href="/mx-player-alternative.html" style="color:#38bdf8;">MX Player Alternative Guide</a>
+<p class="text-secondary">
+  Learn more about how JL Player compares with other apps.
 </p>
+
+<a href="/mx-player-alternative.html" class="btn btn-outline-info mt-3">
+  MX Player Alternative Guide
+</a>
 ```
 
   </div>
 </section>
-
-<!-- FOOTER -->
-
-<footer class="footer">
-  <p>© 2026 JL Developers</p>
-</footer>
-
-<!-- JS -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-lucide.createIcons();
-
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(e=>{
-if(e.isIntersecting){e.target.classList.add('show')}
-})
-});
-document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-</script>
-
-</body>
-</html>
